@@ -1,5 +1,7 @@
 # Digital People - Whisper Diarization
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/luca-martinelli-09/whisper-diarization/blob/main/main.ipynb]
+
 ## Usage
 
 First, activate the virtual environment
