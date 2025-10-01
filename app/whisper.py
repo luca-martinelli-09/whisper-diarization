@@ -4,7 +4,7 @@ from typing import List
 
 from openai import OpenAI
 from openai.types.audio import TranscriptionVerbose
-from pyannote.audio import Pipeline
+from pyannote.pipeline import Pipeline
 from pydantic import BaseModel
 from pydub import AudioSegment
 
@@ -27,7 +27,7 @@ def get_transcripts(
 
     transcripts = []
 
-    for turn, i, speaker in diarization.itertracks(yield_label=True):
+    for turn, i, speaker in diarization.speaker_diarization.itertracks(yield_label=True):
         logging.info(
             f"🧩 START={turn.start:.1f}s STOP={turn.end:.1f}s SPEAKER={speaker}"
         )
