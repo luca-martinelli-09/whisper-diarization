@@ -13,7 +13,7 @@ from app.settings import settings
 def get_pipeline(filename: str | Path) -> Tuple[AudioSegment, Pipeline]:
     pipeline = Pipeline.from_pretrained(
         settings.PYANNOTE_MODEL,
-        use_auth_token=settings.HF_API_KEY,
+        token=settings.HF_API_KEY,
     )
     pipeline.to(torch.device("cuda"))
 
