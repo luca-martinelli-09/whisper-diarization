@@ -2,7 +2,7 @@ from typing import List
 
 from webvtt import Caption, WebVTT
 
-from app.whisper import TranscriptSegment
+from src.whisper import TranscriptSegment
 
 
 def format_milliseconds(milliseconds):

@@ -7,7 +7,7 @@ from openai import OpenAI
 from pyannote.audio import Pipeline
 from pydub import AudioSegment
 
-from app.settings import settings
+from src.settings import settings
 
 
 def get_pipeline(filename: str | Path) -> Tuple[AudioSegment, Pipeline]:

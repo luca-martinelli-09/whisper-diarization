@@ -3,10 +3,10 @@ import logging
 import shutil
 from pathlib import Path
 
-from app.diarization import get_pipeline
-from app.settings import settings
-from app.vtt import create_vtt
-from app.whisper import get_transcripts
+from src.diarization import get_pipeline
+from src.settings import settings
+from src.vtt import create_vtt
+from src.whisper import get_transcripts
 
 logger = logging.getLogger(__name__)
 

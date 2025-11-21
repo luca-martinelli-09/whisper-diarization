@@ -8,7 +8,7 @@ from pyannote.pipeline import Pipeline
 from pydantic import BaseModel
 from pydub import AudioSegment
 
-from app.settings import settings
+from src.settings import settings
 
 
 class TranscriptSegment(BaseModel):
