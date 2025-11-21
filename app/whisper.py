@@ -55,6 +55,7 @@ def get_transcripts(
                 response_format="verbose_json",
                 timestamp_granularities=["segment"],
                 prompt=settings.OPENAI_WHISPER_PROMPT,
+                language="it"
             )
 
             logging.info(f" 📝 Got transcription for {chunk_filename}")
